@@ -2,6 +2,7 @@ var express =  require('express');
 var cors = require('cors');
 
 const app = express();
+// used to enable Cross-Origin Resource Sharing since our UI is hosted on different domain
 app.use(cors());
 
 app.set('port', (process.env.PORT || 5000));
